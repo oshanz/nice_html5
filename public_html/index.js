@@ -3,27 +3,20 @@
  * @contact warunaoshan@gmail.com
  */
 
-(function() {
-	requirejs.config({
-		paths : {
-			jquery : 'libs/jquery-2.1.0.min',
-			underscore : 'libs/underscore-min',
-			backbone : 'libs/backbone-min'
-		},
-		shim : {
-			underscore : {
-				exports : '_'
-			},
-			backbone : {
-				deps : ["underscore", "jquery"],
-				exports : "Backbone"
-			}
+requirejs.config({
+	baseUrl : 'libs',
+	paths : {
+		jquery : 'jquery-2.1.0.min',
+		underscore : 'underscore-min',
+		backbone : 'backbone-min',
+		main : '../main'
+	},
+	shim : {
+		backbone : {
+			deps : ["underscore", "jquery"],
+			exports : "Backbone"
 		}
-	});
+	}
+});
 
-	require(['backbone'], function() {
-		$(document).ready(function() {
-			alert('aasf');
-		});
-	});
-})();
+requirejs(["main"]); 
