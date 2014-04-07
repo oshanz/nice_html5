@@ -10,10 +10,14 @@ and open the template in the editor.
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<script data-main="index" src="libs/require.js" type="text/javascript"></script>
+		<script src="libs/require.js"></script>
+		<script src="libs/config.js"></script>
+		<script>
+			requirejs(["../index"]);
+		</script>
 	</head>
 	<body>
-		<div>
+		<div id="1">
 			TODO write content
 		</div>
 	</body>
