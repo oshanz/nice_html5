@@ -11,9 +11,6 @@
 			backbone : 'libs/backbone-min'
 		},
 		shim : {
-			jquery : {
-				exports : '$'
-			},
 			underscore : {
 				exports : '_'
 			},
