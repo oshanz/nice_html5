@@ -7,7 +7,7 @@
 	requirejs.config({
 		paths : {
 			'jquery' : 'libs/jquery-2.1.0.min',
-			'_' : 'libs/underscore-min',
+			'underscore' : 'libs/underscore-min',
 			'backbone' : 'libs/backbone-min'
 		},
 		shim : {
@@ -24,7 +24,7 @@
 		}
 	});
 
-	require(['jquery'], function() {
+	require(['backbone'], function() {
 		$(document).ready(function() {
 			alert('aasf');
 		});
