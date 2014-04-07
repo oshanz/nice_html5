@@ -6,9 +6,9 @@
 (function() {
 	requirejs.config({
 		paths : {
-			'jquery' : 'libs/jquery-2.1.0.min',
-			'underscore' : 'libs/underscore-min',
-			'backbone' : 'libs/backbone-min'
+			jquery : 'libs/jquery-2.1.0.min',
+			underscore : 'libs/underscore-min',
+			backbone : 'libs/backbone-min'
 		},
 		shim : {
 			jquery : {
