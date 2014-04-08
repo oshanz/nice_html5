@@ -21,4 +21,11 @@ function jui() {
 	require(["jquery_ui"], function() {
 		alert('jquery_ui');
 	});
+	setTimeout(jq, 2000);
+}
+
+function jq() {
+	require(["jquery"], function() {
+		alert('jquery');
+	});
 }
