@@ -7,4 +7,13 @@ define(["jquery"], function() {
 	$(function() {
 		$('#1').html('wow');
 	});
-}); 
+	if (1 == 2) {
+		require(["underscore"], function() {
+			_.each([1, 2], alert);
+		});
+	} else {
+		require(["jquery_ui"], function() {
+			alert('jquery_ui');
+		});
+	}
+});
