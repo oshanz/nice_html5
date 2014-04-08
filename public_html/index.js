@@ -3,9 +3,8 @@
  * @contact warunaoshan@gmail.com
  */
 
-define(["jquery_ui"], function() {
+define(["jquery"], function() {
 	$(function() {
 		$('#1').html('wow');
 	});
-});
-
+}); 
