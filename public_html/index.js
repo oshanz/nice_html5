@@ -7,17 +7,18 @@ define(["jquery"], function() {
 	$(function() {
 		$('#1').html('wow');
 	});
-	setTimeout(continueExecution, 5000);
+	setTimeout(underscore, 2000);
 });
 
-function continueExecution() {
-	if (1 == 2) {
-		require(["underscore"], function() {
-			_.each([1, 2], alert);
-		});
-	} else {
-		require(["jquery_ui"], function() {
-			alert('jquery_ui');
-		});
-	}
+function underscore() {
+	require(["underscore"], function() {
+		_.each([1, 2], alert);
+	});
+	setTimeout(jui, 2000);
+}
+
+function jui() {
+	require(["jquery_ui"], function() {
+		alert('jquery_ui');
+	});
 }
