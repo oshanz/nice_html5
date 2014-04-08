@@ -7,6 +7,10 @@ define(["jquery"], function() {
 	$(function() {
 		$('#1').html('wow');
 	});
+	setTimeout(continueExecution, 5000);
+});
+
+function continueExecution() {
 	if (1 == 2) {
 		require(["underscore"], function() {
 			_.each([1, 2], alert);
@@ -16,4 +20,4 @@ define(["jquery"], function() {
 			alert('jquery_ui');
 		});
 	}
-});
+}
