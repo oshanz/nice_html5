@@ -3,29 +3,29 @@
  * @contact warunaoshan@gmail.com
  */
 
-define(["jquery"], function() {
-	$(function() {
-		$('#1').html('wow');
-	});
-	setTimeout(underscore, 2000);
+require(["jquery"], function() {
+    $(function() {
+        $('#1').html(jQuery.fn.jquery);
+    });
+    setTimeout(underscore, 2000);
 });
 
 function underscore() {
-	require(["underscore"], function() {
-		_.each([1, 2], alert);
-	});
-	setTimeout(jui, 2000);
+    require(["underscore"], function() {
+        _.each([1, 2], alert);
+    });
+    setTimeout(jui, 2000);
 }
 
 function jui() {
-	require(["jquery_ui"], function() {
-		alert('jquery_ui');
-	});
-	setTimeout(jq, 2000);
+    require(["jquery_ui"], function() {
+        alert('jquery_ui');
+    });
+    setTimeout(jq, 2000);
 }
 
 function jq() {
-	require(["jquery"], function() {
-		alert('jquery');
-	});
+    require(["jquery"], function() {
+        alert('jquery');
+    });
 }
